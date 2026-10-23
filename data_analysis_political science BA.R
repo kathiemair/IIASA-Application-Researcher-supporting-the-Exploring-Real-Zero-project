@@ -1,7 +1,13 @@
-################## BA Katharina Mair: data analysis 31mar2024###################################
-# Change the language and date formatting to English if it is not already
+################## BA Katharina Mair: data analysis###################################
+#Author: Katharina Mair
+#Date: Spring 2024
+#Description: This code was used for data analysis and visualization of results for my bachelor's thesis on
+#the effect of gender and education of ministers holding climate-related portfolios on climate policy stringency, using data from
+#six EU countries from ~1990 to 2022. This thesis received the early-career prize of the Austrian Political Science Association.
+
+################## setup ################################
 Sys.setenv(LANG = "EN")
-Sys.setlocale("LC_TIME", "English") # key, without this conversion to POSIXct does not work
+Sys.setlocale("LC_TIME", "English")
 Sys.getlocale(category = "LC_ALL")
 
 if("stargazer" %in% rownames(installed.packages()) == FALSE) {install.packages("stargazer")}
@@ -36,8 +42,8 @@ if("htm2txt" %in% rownames(installed.packages()) == FALSE) {install.packages("ht
 if("dplyr" %in% rownames(installed.packages()) == FALSE) {install.packages("dplyr")}
 if("pdftools" %in% rownames(installed.packages()) == FALSE) {install.packages("pdftools")}
 if("mgsub" %in% rownames(installed.packages()) == FALSE) {install.packages("mgsub")}
-if("Unicode" %in% rownames(installed.packages()) == FALSE) {install.packages("Unicode")} # For character correction function 
-if("stringi" %in% rownames(installed.packages()) == FALSE) {install.packages("stringi")} # For character correction function
+if("Unicode" %in% rownames(installed.packages()) == FALSE) {install.packages("Unicode")} 
+if("stringi" %in% rownames(installed.packages()) == FALSE) {install.packages("stringi")} 
 if("xlsx" %in% rownames(installed.packages()) == FALSE) {install.packages("xlsx")}
 if("RSelenium" %in% rownames(installed.packages()) == FALSE) {install.packages("RSelenium")}
 if("openxlsx" %in% rownames(installed.packages()) == FALSE) {install.packages("openxlsx")}
@@ -45,7 +51,7 @@ if("janitor" %in% rownames(installed.packages()) == FALSE) {install.packages("ja
 if("reshape2" %in% rownames(installed.packages()) == FALSE) {install.packages("reshape2")}
 if("broom" %in% rownames(installed.packages()) == FALSE) {install.packages("broom")}
 if("forecast" %in% rownames(installed.packages()) == FALSE) {install.packages("forecast")}
-# Load relevant packages
+# Load  packages
 library(readxl)
 library(stargazer)
 library(broom)
@@ -80,8 +86,8 @@ library(dplyr)
 library(pdftools)
 library(tseries)
 library(mgsub)
-library(Unicode) # For character correction function 
-library(stringi) # For character correction function
+library(Unicode) 
+library(stringi) 
 #install.packages("rJava", repos="https://rforge.net/", type='source') #in case library(xlsx) gives error
 library(xlsx)
 library(openxlsx)
