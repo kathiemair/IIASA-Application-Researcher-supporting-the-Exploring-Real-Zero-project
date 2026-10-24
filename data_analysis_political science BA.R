@@ -1,10 +1,6 @@
 ################## BA Katharina Mair: data analysis###################################
 #Author: Katharina Mair
 #Date: Spring 2024
-#Description: This code was used for data analysis and visualization of results for my bachelor's thesis on
-#the effect of gender and education of ministers holding climate-related portfolios on climate policy stringency, using data from
-#six EU countries from ~1990 to 2022. This thesis received the early-career prize of the Austrian Political Science Association.
-
 ################## setup ################################
 Sys.setenv(LANG = "EN")
 Sys.setlocale("LC_TIME", "English")
